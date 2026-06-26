@@ -185,3 +185,43 @@ for i in range(num):
     print(final_list)
 
 
+    
+        
+    
+
+print(f"""
+      Type 7: 
+      
+      """)
+    
+    
+
+
+
+alphabets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+
+
+spaces = 30
+
+for i in range(num):
+    pattern_list = []
+    j=0
+      
+    while j<=spaces:
+        pattern_list.append(" ")
+        j += 1     
+    
+    spaces -= 1
+    
+    rev_list = []
+    rev_list += alphabets[0:i]
+    rev_list.reverse()
+    
+    
+    letter_list = pattern_list + alphabets[0:i+1] + rev_list
+
+    
+    x = " ".join(letter_list)
+    
+    print(x)
